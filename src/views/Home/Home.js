@@ -10,7 +10,6 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchBees();
-      console.log(data);
       setBees(data);
     };
     fetchData();

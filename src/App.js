@@ -9,6 +9,7 @@ import Auth from './views/Auth/Auth';
 import Profile from './views/Profile/Profile';
 import { useState } from 'react';
 import { getUser } from './services/users';
+import BeeForm from './components/BeeForm/BeeForm';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/auth">
             <Auth setCurrentUser={setCurrentUser} />
+          </Route>
+          <Route exact path="/beeform/:id">
+            <BeeForm currentUser={currentUser} />
           </Route>
         </Switch>
       </BrowserRouter>

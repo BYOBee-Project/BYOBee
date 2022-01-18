@@ -16,10 +16,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="Home">
-      {bees.map((bee) => (
-        <BeeCard key={bee.id} bee={bee} />
-      ))}
+    <div className="home">
+      <div className="bee-list">
+        {bees.map((bee) => (
+          <BeeCard key={bee.id} bee={bee} />
+        ))}
+      </div>
     </div>
   );
 }

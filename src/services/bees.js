@@ -6,6 +6,6 @@ export async function fetchBees() {
 }
 
 export async function findBeeById(id) {
-  const response = await client.from('bees').select('*').eq('id', id).single();
+  const response = await client.from('bees').select('*').match({ id }).single();
   return checkError(response);
 }

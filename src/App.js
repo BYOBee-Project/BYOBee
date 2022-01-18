@@ -6,18 +6,25 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Resources from './components/Resources/Resources';
 import Auth from './views/Auth/Auth';
+import { useState } from 'react';
+import { getUser } from './services/users';
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(getUser());
+
   return (
     <div className="app">
       <BrowserRouter>
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/:id" component={BeeDetail} />
+          <Route exact path="/bees" component={Home} />
+          <Route exact path="/bees/:id" component={BeeDetail} />
           <Route exact path="/about" component={About} />
           <Route exact path="/resources" component={Resources} />
-          <Route exact path="/auth" component={Auth} />
+          <Route exact path="/auth">
+            <Auth setCurrentUser={setCurrentUser} />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

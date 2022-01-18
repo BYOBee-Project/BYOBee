@@ -13,8 +13,8 @@ export default function AuthForm({
   setType,
 }) {
   return (
-    <>
-      <div className="Header">
+    <div className="auth">
+      <div className="auth-header">
         <span
           className={classNames({ active: type === 'signin' })}
           onClick={() => {
@@ -32,7 +32,7 @@ export default function AuthForm({
           Sign-up
         </span>
       </div>
-      <form className="AuthForm" onSubmit={handleSubmit}>
+      <form className="auth-form" onSubmit={handleSubmit}>
         <label>E-mail</label>
         <input
           className="text-input"
@@ -50,6 +50,6 @@ export default function AuthForm({
         <input className="button" type="submit" />
         <span className="error">{errorMsg}</span>
       </form>
-    </>
+    </div>
   );
 }

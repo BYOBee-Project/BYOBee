@@ -16,3 +16,8 @@ export async function findUserBee(id) {
   const reponse = await client.from('submissions').select('*').match({ id }).single();
   return checkError(reponse);
 }
+
+export async function deleteSubmission(id) {
+  const response = await client.from('submissions').delete().eq('id', id);
+  return checkError(response);
+}

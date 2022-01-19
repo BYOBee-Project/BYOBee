@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { getUser } from './services/users';
 import BeeForm from './components/BeeForm/BeeForm';
 import UserDetail from './views/UserDetail/UserDetail';
+import ProtectedRoute from './utils/ProtectedRoute';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -27,9 +28,9 @@ function App() {
           </Route>
           <Route exact path="/about" component={About} />
           <Route exact path="/resources" component={Resources} />
-          <Route exact path="/profile">
+          <ProtectedRoute exact path="/profile" currentUser={currentUser}>
             <Profile setCurrentUser={setCurrentUser} currentUser={currentUser} />
-          </Route>
+          </ProtectedRoute>
           <Route exact path="/auth">
             <Auth setCurrentUser={setCurrentUser} />
           </Route>

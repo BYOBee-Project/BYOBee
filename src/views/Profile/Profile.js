@@ -12,6 +12,7 @@ export default function Profile({ setCurrentUser, currentUser }) {
   const [loading, setLoading] = useState(true);
   const history = useHistory();
 
+  console.log('current user', currentUser);
   const logoutUser = async () => {
     await logout();
     history.push('/');

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './BeeForm.css';
 import { useEffect } from 'react';
-import { findBeeById } from '../../services/bees';
+import { addSubmission, findBeeById } from '../../services/bees';
 import { useParams } from 'react-router-dom';
 import { client } from '../../services/client';
 
@@ -12,7 +12,10 @@ export default function BeeForm({ currentUser }) {
   const [photo, setPhoto] = useState('');
   const [observation, setObservation] = useState('');
   const [location, setLocation] = useState('');
-  // console.log('currentuser line15', currentUser.user.id);
+
+  const currentUserId = currentUser.user.id;
+  const beeId = newBee.id;
+
   useEffect(() => {
     const fetchBee = async () => {
       const data = await findBeeById(params.id);
@@ -21,8 +24,9 @@ export default function BeeForm({ currentUser }) {
     fetchBee();
   }, [params.id]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    await addSubmission(date, photo, observation, location, currentUserId, beeId);
   };
 
   const handleUpload = async (event) => {
@@ -31,12 +35,11 @@ export default function BeeForm({ currentUser }) {
       if (!event.target.files || event.target.files.length === 0) {
         throw new Error('You must select an image to upload.');
       }
-      const userID = currentUser.user.id;
-      const beeID = newBee.id;
+
       const file = event.target.files[0];
       const fileExt = file.name.split('.').pop();
       const fileName = `${new Date().toISOString()}.${fileExt}`;
-      const filePath = `${userID}/${beeID}/${fileName}`;
+      const filePath = `${currentUserId}/${beeId}/${fileName}`;
 
       setPhoto(
         `https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/${filePath}`

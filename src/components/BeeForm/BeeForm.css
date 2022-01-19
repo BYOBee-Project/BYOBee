@@ -1,0 +1,11 @@
+.bee-form-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bee-form-label {
+  margin: 5px;
+  font-weight: bolder;
+}

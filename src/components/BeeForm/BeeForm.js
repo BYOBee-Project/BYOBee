@@ -14,8 +14,6 @@ export default function BeeForm({ currentUser }) {
   const [observation, setObservation] = useState('');
   const [location, setLocation] = useState('');
   const [message, setMessage] = useState(null);
-  // const [name, setName] = useState('');
-
   const currentUserId = currentUser.user.id;
   const beeId = newBee.id;
   const beeName = newBee.name;

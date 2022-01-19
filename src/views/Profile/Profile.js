@@ -34,6 +34,21 @@ export default function Profile({ setCurrentUser, currentUser }) {
     setUserBees(data);
   };
 
+  const handleEdit = async (userBee) => {
+    await editSubmission(
+      userBee.id,
+      beeName,
+      date,
+      photo,
+      observation,
+      location,
+      currentUserId,
+      beeId
+    );
+    const data = await getUserBees(id);
+    setUserBees(data);
+  };
+
   if (loading) return <h1>Loading...</h1>;
 
   return (

@@ -21,3 +21,20 @@ export async function deleteSubmission(id) {
   const response = await client.from('submissions').delete().eq('id', id);
   return checkError(response);
 }
+
+export async function editSubmission(
+  id,
+  name,
+  date,
+  image1,
+  observations,
+  location,
+  user_id,
+  bee_id
+) {
+  const response = await client
+    .from('submissions')
+    .update({ id, name, date, image1, observations, location, user_id, bee_id })
+    .eq('id', id);
+  return checkError(response);
+}

@@ -16,10 +16,6 @@ export default function BeeDetail(props) {
     fetchBee();
   }, [id]);
 
-  // async function handleClick() {
-  //  await
-  // }
-
   return (
     <div className="BeeDetail">
       {currentBee.name}

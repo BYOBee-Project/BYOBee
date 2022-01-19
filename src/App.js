@@ -10,6 +10,7 @@ import Profile from './views/Profile/Profile';
 import { useState } from 'react';
 import { getUser } from './services/users';
 import BeeForm from './components/BeeForm/BeeForm';
+import UserDetail from './views/UserDetail/UserDetail';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/beeform/:id">
             <BeeForm currentUser={currentUser} />
           </Route>
+          <Route exact path="/profile/:id" component={UserDetail} />
         </Switch>
       </BrowserRouter>
     </div>

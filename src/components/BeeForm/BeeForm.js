@@ -12,7 +12,7 @@ export default function BeeForm({ currentUser }) {
   const [photo, setPhoto] = useState('');
   const [observation, setObservation] = useState('');
   const [location, setLocation] = useState('');
-
+  // console.log('currentuser line15', currentUser.user.id);
   useEffect(() => {
     const fetchBee = async () => {
       const data = await findBeeById(params.id);
@@ -31,8 +31,8 @@ export default function BeeForm({ currentUser }) {
       if (!event.target.files || event.target.files.length === 0) {
         throw new Error('You must select an image to upload.');
       }
-      const userID = '2';
-      const beeID = 'masonbee';
+      const userID = currentUser.user.id;
+      const beeID = newBee.id;
       const file = event.target.files[0];
       const fileExt = file.name.split('.').pop();
       const fileName = `${new Date().toISOString()}.${fileExt}`;

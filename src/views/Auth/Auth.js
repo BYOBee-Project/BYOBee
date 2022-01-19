@@ -2,12 +2,14 @@ import './Auth.css';
 import AuthForm from '../../components/AuthForm/AuthForm';
 import { useState } from 'react';
 import { signInUser, signupUser } from '../../services/users';
+import { useHistory } from 'react-router-dom';
 
 export default function Auth({ setCurrentUser }) {
   const [type, setType] = useState('signin');
   const [errorMsg, setErrorMsg] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +20,8 @@ export default function Auth({ setCurrentUser }) {
       } else {
         resp = await signupUser(email, password);
       }
-      setCurrentUser(resp);
+      setCurrentUser({ user: resp });
+      history.push('/profile');
     } catch {
       setErrorMsg('Oops, something went wrong. Please try again!');
     }

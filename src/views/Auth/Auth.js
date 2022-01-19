@@ -21,7 +21,7 @@ export default function Auth({ setCurrentUser }) {
         resp = await signupUser(email, password);
       }
       setCurrentUser({ user: resp });
-      history.push('/profile');
+      history.push('/');
     } catch {
       setErrorMsg('Oops, something went wrong. Please try again!');
     }

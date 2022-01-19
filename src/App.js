@@ -4,7 +4,7 @@ import Home from './views/Home/Home';
 import BeeDetail from './components/BeeDetail/BeeDetail';
 import Header from './components/Header/Header';
 import About from './components/About/About';
-import Resources from './components/resources/Resources';
+import Resources from './components/Resources/Resources';
 import Auth from './views/Auth/Auth';
 import Profile from './views/Profile/Profile';
 import { useState } from 'react';

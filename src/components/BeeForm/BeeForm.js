@@ -14,9 +14,11 @@ export default function BeeForm({ currentUser }) {
   const [observation, setObservation] = useState('');
   const [location, setLocation] = useState('');
   const [message, setMessage] = useState(null);
+  // const [name, setName] = useState('');
 
   const currentUserId = currentUser.user.id;
   const beeId = newBee.id;
+  const beeName = newBee.name;
 
   const history = useHistory();
 
@@ -31,7 +33,7 @@ export default function BeeForm({ currentUser }) {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      await addSubmission(date, photo, observation, location, currentUserId, beeId);
+      await addSubmission(beeName, date, photo, observation, location, currentUserId, beeId);
       setMessage('Nice!');
       setTimeout(() => {
         history.push('/profile');

@@ -3,6 +3,7 @@ import './BeeForm.css';
 import { useEffect } from 'react';
 import { findBeeById } from '../../services/bees';
 import { useParams } from 'react-router-dom';
+import { client } from '../../services/client';
 
 export default function BeeForm({ currentUser }) {
   const params = useParams();
@@ -22,7 +23,33 @@ export default function BeeForm({ currentUser }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('clicking');
+  };
+
+  const handleUpload = async (event) => {
+    event.preventDefault();
+    try {
+      if (!event.target.files || event.target.files.length === 0) {
+        throw new Error('You must select an image to upload.');
+      }
+      const userID = '2';
+      const beeID = 'masonbee';
+      const file = event.target.files[0];
+      const fileExt = file.name.split('.').pop();
+      const fileName = `${new Date().toISOString()}.${fileExt}`;
+      const filePath = `${userID}/${beeID}/${fileName}`;
+
+      setPhoto(
+        `https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/${filePath}`
+      );
+
+      let { error: uploadError } = await client.storage.from('images').upload(filePath, file);
+
+      if (uploadError) {
+        throw uploadError;
+      }
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (
@@ -30,7 +57,7 @@ export default function BeeForm({ currentUser }) {
       <h1>Add a {newBee.name} to your collection!</h1>
       <form className="bee-form-form">
         <label className="bee-form-label">Add a photo:</label>
-        <input type="file" />
+        <input type="file" id="single" accept="image/*" onChange={handleUpload} />
         <label className="bee-form-label">Add a date:</label>
         <input
           type="date"

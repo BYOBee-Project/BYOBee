@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './BeeForm.css';
 import { useEffect } from 'react';
-import { addSubmission, findBeeById } from '../../services/bees';
+import { findBeeById } from '../../services/bees';
 import { useParams, useHistory } from 'react-router-dom';
 import { client } from '../../services/client';
+import { addSubmission } from '../../services/submissions';
 
 export default function BeeForm({ currentUser }) {
   const params = useParams();

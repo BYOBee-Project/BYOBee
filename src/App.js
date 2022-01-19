@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './views/Home/Home';
-import BeeDetail from './views/BeeDetail/BeeDetail';
+import BeeDetail from './components/BeeDetail/BeeDetail';
 import Header from './components/Header/Header';
 import About from './components/About/About';
-import Resources from './components/Resources/Resources';
+import Resources from './components/resources/Resources';
 import Auth from './views/Auth/Auth';
 import Profile from './views/Profile/Profile';
 import { useState } from 'react';
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/resources" component={Resources} />
           <Route exact path="/profile">
-            <Profile setCurrentUser={setCurrentUser} />
+            <Profile setCurrentUser={setCurrentUser} currentUser={currentUser} />
           </Route>
           <Route exact path="/auth">
             <Auth setCurrentUser={setCurrentUser} />

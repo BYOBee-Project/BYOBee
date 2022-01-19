@@ -5,6 +5,7 @@ import { getUserBees } from '../../services/submissions';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import UserCard from '../../components/UserCard/UserCard';
+import { deleteSubmission } from '../../services/submissions';
 
 export default function Profile({ setCurrentUser, currentUser }) {
   const id = currentUser.user.id;
@@ -27,12 +28,18 @@ export default function Profile({ setCurrentUser, currentUser }) {
     fetchData();
   }, [id]);
 
+  const handleDelete = async (userBee) => {
+    await deleteSubmission(userBee.id);
+    const data = await getUserBees(id);
+    setUserBees(data);
+  };
+
   if (loading) return <h1>Loading...</h1>;
 
   return (
     <div className="profile">
       {userBees.map((userBee) => (
-        <UserCard key={userBee.id} userBee={userBee} />
+        <UserCard key={userBee.id} userBee={userBee} handleDelete={handleDelete} />
       ))}
 
       <button onClick={logoutUser}>Logout</button>

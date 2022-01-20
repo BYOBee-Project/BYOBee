@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './views/Home/Home';
-import BeeDetail from './components/BeeDetail/BeeDetail';
+import BeeDetail from './views/BeeDetail/BeeDetail';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Resources from './components/Resources/Resources';

@@ -27,5 +27,6 @@ export async function editSubmission(id, date, image1, observations, location) {
     .from('submissions')
     .update({ id, date, image1, observations, location })
     .eq('id', id);
+  console.log('im in editSubmission');
   return checkError(response);
 }

@@ -26,8 +26,10 @@ export default function Edit({ currentUser }) {
     fetchBee();
   }, [params.id]);
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     await editSubmission(params.id, date, photo, observation, location);
+    console.log('in handleSubmit');
   };
 
   const handleUpload = async (event) => {

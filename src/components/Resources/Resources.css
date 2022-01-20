@@ -2,7 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 65%;
+  background-color: hsla(4, 82%, 67%, 0.827);
+  border-radius: 10px;
+  margin: 10vh 0 10vh 0;
+  padding: 0 4vw 2vh 4vw;
+}
+
+.resources-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 6vh;
+  margin: 6vh 0 4vh 0;
 }
 
 .resource-images {
@@ -12,6 +22,21 @@
 }
 
 .resources-image {
-  width: 15vw;
+  width: 12vw;
   margin: 1vw;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 2px #000007);
+}
+
+.resources p {
+  line-height: 2.5vh;
+}
+
+.resources li {
+  line-height: 2.5vh;
+  margin-bottom: 1vh;
+}
+
+.resources button {
+  margin: 3vh;
 }

@@ -10,8 +10,10 @@ font-family: 'Londrina Solid', cursive; */
   --peach-puff: #fed9b7ff;
   --bittersweet: #f07167ff;
 }
+
 body {
   margin: 0;
+  background-color: rgba(254, 217, 183, 0.233);
 }
 
 .app {
@@ -19,18 +21,40 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(254, 217, 183, 0.527);
 }
 
 a:link {
   text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 button {
   border: none;
   background-color: var(--cg-blue);
+  font-size: 2vh;
+  padding: 1vh;
   color: white;
-  padding: 0.8vh;
   border-radius: 5px;
   font-family: 'Londrina Solid', cursive;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button a {
+  color: white;
+}
+
+button a:visited {
+  color: white;
+}
+
+.loader {
+  font-family: 'Londrina Solid', cursive;
+  margin: 10vh;
 }

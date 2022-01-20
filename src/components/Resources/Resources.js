@@ -48,7 +48,9 @@ export default function Resources() {
         </li>
         <li>Spread the word and share your love of bees with others!</li>
       </ul>
-      <Link to={'/'}>Back to Home</Link>
+      <button>
+        <Link to={'/'}>Back to Home</Link>
+      </button>
     </div>
   );
 }

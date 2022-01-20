@@ -1,14 +1,21 @@
 .user-detail {
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
+  background-color: hsla(4, 82%, 67%, 0.827);
+  border-radius: 10px;
+  margin: 10vh 0 10vh 0;
+  padding: 2vh 4vw 2vh 4vw;
 }
 
 .user-detail-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 6vh;
   text-align: center;
-  margin: 5vh 0 5vh 0;
   padding: 0;
+  margin: 6vh;
 }
 
 .user-detail-links {
@@ -21,6 +28,12 @@
 .user-details {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  width: 50%;
+  background-color: rgba(254, 217, 183, 0.195);
+  padding: 2vw;
+  margin: 2vh 0 4vh 0;
+  border-radius: 10px;
 }
 
 .user-detail-label {
@@ -30,5 +43,10 @@
 .user-detail-image {
   width: 30vw;
   margin: 0 0 2vh 0;
-  border: 1px solid black;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 2px #000007);
+}
+
+.user-detail-button {
+  margin: 2vh 0 4vh 0;
 }

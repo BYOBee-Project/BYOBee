@@ -1,4 +1,40 @@
-.bio-card img {
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.about-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 6vh;
+  margin: 8vh;
+}
+
+.about-bios {
+  display: flex;
+  gap: 2vw;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.about-bio-card {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh 2vw 1vh 2vw;
+  border-radius: 10px;
+  background-color: hsla(4, 82%, 67%, 0.827);
+}
+
+.about-bio-card-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 3vh;
+}
+
+.about-bio-card-image {
   width: 10vw;
-  height: auto;
+  border-radius: 5px;
 }

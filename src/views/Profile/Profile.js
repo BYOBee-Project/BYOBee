@@ -38,10 +38,12 @@ export default function Profile({ setCurrentUser, currentUser }) {
 
   return (
     <div className="profile">
-      {userBees.map((userBee) => (
-        <UserCard key={userBee.id} userBee={userBee} handleDelete={handleDelete} />
-      ))}
-
+      <h1 className="profile-title">Bee Collection</h1>
+      <div className="profile-cards">
+        {userBees.map((userBee) => (
+          <UserCard key={userBee.id} userBee={userBee} handleDelete={handleDelete} />
+        ))}
+      </div>
       <button onClick={logoutUser}>Logout</button>
     </div>
   );

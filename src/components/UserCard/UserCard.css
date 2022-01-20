@@ -1,0 +1,22 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+}
+
+.user-card-image {
+  width: 20vw;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.user-card-image:hover {
+  transform: scale(1.1);
+}
+
+.user-card-buttons {
+  display: flex;
+  gap: 1vw;
+}

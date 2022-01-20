@@ -4,19 +4,34 @@
   align-items: center;
   justify-content: center;
   width: 25vw;
+  padding: 2vh;
+  font-size: 1.8vw;
+  background-color: rgba(0, 128, 167, 0.384);
+  border-radius: 10px;
+}
+
+.user-card-title {
+  margin: 1vh 0 2vh 0;
+  color: black;
+  font-family: 'Londrina Solid', cursive;
 }
 
 .user-card-image {
   width: 20vw;
   border-radius: 5px;
-  border: 1px solid black;
+  filter: drop-shadow(1px 1px 2px #000007);
+  margin-bottom: 2vh;
 }
 
 .user-card-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .user-card-buttons {
   display: flex;
   gap: 1vw;
+}
+
+.edit-button {
+  color: white;
 }

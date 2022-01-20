@@ -34,7 +34,7 @@ export default function Profile({ setCurrentUser, currentUser }) {
     setUserBees(data);
   };
 
-  if (loading) return <h1>Loading...</h1>;
+  if (loading) return <h1 className="loader">Loading...</h1>;
 
   return (
     <div className="profile">

@@ -28,7 +28,7 @@ export default function Auth({ setCurrentUser }) {
   };
 
   return (
-    <div className="Auth">
+    <div className="auth">
       <AuthForm
         errorMsg={errorMsg}
         email={email}

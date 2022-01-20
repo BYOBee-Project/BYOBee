@@ -38,9 +38,11 @@ export default function UserDetail(props) {
           {userBee.observations}
         </p>
       </div>
-      <Link to={`/profile`} className="user-detail-link">
-        Back to Profile
-      </Link>
+      <button className="user-detail-button">
+        <Link to={`/profile`} className="user-detail-link">
+          Back to Profile
+        </Link>
+      </button>
     </div>
   );
 }

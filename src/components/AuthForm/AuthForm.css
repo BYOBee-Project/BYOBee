@@ -1,8 +1,13 @@
 .auth-header {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 4vh;
+}
 
-  padding: 2vh;
+.auth-header span {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 3vh;
+  margin: 0 1vh 0 1vh;
 }
 
 .auth-header > .active {
@@ -12,4 +17,24 @@
 .auth-form {
   display: flex;
   flex-direction: column;
+  gap: 1vh;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+
+.button {
+  align-self: center;
+  color: white;
+  border: none;
+  width: 8vw;
+  background-color: var(--cg-blue);
+  font-size: 2vh;
+  padding: 1vh;
+  border-radius: 5px;
+  font-family: 'Londrina Solid', cursive;
+  margin-top: 2vh;
+}
+
+.button:hover {
+  transform: scale(1.05);
 }

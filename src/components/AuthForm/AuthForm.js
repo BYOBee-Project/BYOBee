@@ -13,7 +13,7 @@ export default function AuthForm({
   setType,
 }) {
   return (
-    <div className="auth">
+    <div className="auth-form">
       <div className="auth-header">
         <span
           className={classNames({ active: type === 'signin' })}

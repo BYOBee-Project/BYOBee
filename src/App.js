@@ -12,6 +12,7 @@ import { getUser } from './services/users';
 import BeeForm from './components/BeeForm/BeeForm';
 import UserDetail from './views/UserDetail/UserDetail';
 import ProtectedRoute from './utils/ProtectedRoute';
+import Edit from './views/Edit/Edit';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -38,6 +39,9 @@ function App() {
             <BeeForm currentUser={currentUser} />
           </Route>
           <Route exact path="/profile/:id" component={UserDetail} />
+          <ProtectedRoute exact path="/edit/:id" currentUser={currentUser}>
+            <Edit currentUser={currentUser} />
+          </ProtectedRoute>
         </Switch>
       </BrowserRouter>
     </div>

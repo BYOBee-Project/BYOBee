@@ -2,7 +2,7 @@ import React from 'react';
 import './UserCard.css';
 import { Link } from 'react-router-dom';
 
-export default function UserCard({ userBee, handleDelete, handleEdit }) {
+export default function UserCard({ userBee, handleDelete, handleClick }) {
   return (
     <div className="user-bee-card">
       <h3>{userBee.name}</h3>
@@ -13,8 +13,8 @@ export default function UserCard({ userBee, handleDelete, handleEdit }) {
         <button className="delete-button" onClick={() => handleDelete(userBee)}>
           Delete
         </button>
-        <button className="edit-button" onClick={() => handleEdit(userBee)}>
-          Edit
+        <button>
+          <Link to={`/edit/${userBee.id}`}>Edit</Link>
         </button>
       </div>
     </div>

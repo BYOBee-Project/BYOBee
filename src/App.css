@@ -25,3 +25,12 @@ body {
 a:link {
   text-decoration: none;
 }
+
+button {
+  border: none;
+  background-color: var(--cg-blue);
+  color: white;
+  padding: 0.8vh;
+  border-radius: 5px;
+  font-family: 'Londrina Solid', cursive;
+}

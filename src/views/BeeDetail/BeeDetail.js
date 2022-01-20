@@ -22,6 +22,10 @@ export default function BeeDetail({ currentUser }) {
   return (
     <div className="bee-detail">
       <h1 className="bee-detail-title">{currentBee.name}</h1>
+      <div className="bee-detail-images">
+        <img className="bee-detail-image" src={currentBee.image1} alt={currentBee.name} />
+        <img className="bee-detail-image" src={currentBee.image2} alt={currentBee.name} />
+      </div>
       <div className="bee-detail-links">
         {!currentUser && (
           <button>
@@ -38,11 +42,6 @@ export default function BeeDetail({ currentUser }) {
           </button>
         )}
       </div>
-      <div className="bee-detail-images">
-        <img className="bee-detail-image" src={currentBee.image1} alt={currentBee.name} />
-        <img className="bee-detail-image" src={currentBee.image2} alt={currentBee.name} />
-      </div>
-
       <div className="bee-details">
         <p className="bee-detail-info">
           <span className="bee-detail-label">Species: </span>
@@ -77,9 +76,11 @@ export default function BeeDetail({ currentUser }) {
           {currentBee.fact}
         </p>
       </div>
-      <Link to={`/`} className="bee-detail-link">
-        Back to Home
-      </Link>
+      <button>
+        <Link to={`/`} className="bee-detail-link">
+          Back to Home
+        </Link>
+      </button>
     </div>
   );
 }

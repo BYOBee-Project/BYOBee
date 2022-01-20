@@ -5,14 +5,22 @@
   justify-content: center;
   width: 25vw;
   padding: 1vh;
-  background-color: rgba(240, 112, 103, 0.473);
+  font-size: 1.8vw;
+  background-color: hsla(4, 82%, 67%, 0.827);
   border-radius: 10px;
+}
+
+.bee-card-title {
+  margin: 1vh 0 1vh 0;
+  filter: drop-shadow(1px 1px 2px #000007);
+  color: white;
 }
 
 .card-image {
   width: 20vw;
   border-radius: 5px;
   filter: drop-shadow(1px 1px 2px #000007);
+  margin-bottom: 0.5vh;
 }
 
 .card-image:hover {

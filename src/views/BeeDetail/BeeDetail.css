@@ -1,0 +1,39 @@
+.bee-detail {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bee-detail-title {
+  text-align: center;
+  margin: 5vh 0 0 0;
+  padding: 0;
+}
+
+.bee-detail-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 0 4vh 0;
+}
+
+.bee-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.bee-detail-label {
+  font-weight: bold;
+}
+
+.bee-detail-images {
+  display: flex;
+  gap: 2vw;
+}
+
+.bee-detail-image {
+  width: 25vw;
+  margin: 0 0 2vh 0;
+  border: 1px solid black;
+}

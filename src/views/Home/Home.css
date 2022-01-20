@@ -2,12 +2,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+
+.home-title {
+  padding: 0;
+  margin: 5vh 0 0 0;
+}
+
+.home-info {
+  width: 70%;
+  text-align: justify;
+}
+
 .bee-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 75vw;
   gap: 2vw;
   margin-top: 4vh;
 }

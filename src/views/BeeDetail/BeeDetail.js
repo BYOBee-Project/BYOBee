@@ -6,7 +6,6 @@ import { Link, useParams } from 'react-router-dom';
 
 export default function BeeDetail({ currentUser }) {
   const params = useParams();
-  // const id = props.match.params.id;
   const [currentBee, setCurrentBee] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -21,18 +20,62 @@ export default function BeeDetail({ currentUser }) {
 
   if (loading) return <h1 className="loader">Loading...</h1>;
   return (
-    <div className="BeeDetail">
-      {currentBee.name}
-      {currentUser && (
-        <Link to={`/beeform/${params.id}`} className="bee-card-Link">
-          add to collection
-        </Link>
-      )}
-      {!currentUser && (
-        <Link to={`/auth`} className="bee-card-Link">
-          add to collection
-        </Link>
-      )}
+    <div className="bee-detail">
+      <h1 className="bee-detail-title">{currentBee.name}</h1>
+      <div className="bee-detail-links">
+        {!currentUser && (
+          <Link to={`/auth`} className="bee-card-link">
+            + Add to Collection
+          </Link>
+        )}
+        {currentUser && (
+          <Link to={`/beeform/${params.id}`} className="bee-card-link">
+            + Add to Collection
+          </Link>
+        )}
+      </div>
+      <div className="bee-detail-images">
+        <img className="bee-detail-image" src={currentBee.image1} alt={currentBee.name} />
+        <img className="bee-detail-image" src={currentBee.image2} alt={currentBee.name} />
+      </div>
+
+      <div className="bee-details">
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Species: </span>
+          {currentBee.species}
+        </p>
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Family: </span>
+          {currentBee.family}
+        </p>
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Region: </span>
+          {currentBee.region}
+        </p>
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Description: </span>
+          {currentBee.description}
+        </p>
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Preferred Forage: </span>
+          {currentBee.forage}
+        </p>
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Nesting Habits: </span>
+          {currentBee.habitat}
+        </p>
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Active Season: </span>
+          {currentBee.season}
+        </p>
+        <p className="bee-detail-info">
+          <span className="bee-detail-label">Fun Fact: </span>
+          {currentBee.fact}
+        </p>
+      </div>
+      <Link to={`/`} className="bee-detail-link">
+        Back to Home
+      </Link>
     </div>
   );
 }

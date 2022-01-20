@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { findUserBee, editSubmission } from '../../services/submissions';
-import './Edit.css';
+import React from 'react';
 import BeeForm from '../../components/BeeForm/BeeForm';
-import { useHistory } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useParams, useHistory } from 'react-router-dom';
+import { findBeeById } from '../../services/bees';
 import { client } from '../../services/client';
+import { addSubmission } from '../../services/submissions';
 
-export default function Edit({ currentUser }) {
+export default function Add({ currentUser }) {
   const params = useParams();
   const [newBee, setNewBee] = useState('');
   const [date, setDate] = useState('');
@@ -15,21 +15,31 @@ export default function Edit({ currentUser }) {
   const [location, setLocation] = useState('');
   const [message, setMessage] = useState(null);
   const currentUserId = currentUser.user.id;
+  const beeId = newBee.id;
+  const beeName = newBee.name;
 
   const history = useHistory();
 
   useEffect(() => {
     const fetchBee = async () => {
-      const data = await findUserBee(params.id);
+      const data = await findBeeById(params.id);
       setNewBee(data);
     };
     fetchBee();
   }, [params.id]);
 
-  const handleSubmit = async () => {
-    await editSubmission(params.id, date, photo, observation, location);
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      await addSubmission(beeName, date, photo, observation, location, currentUserId, beeId);
+      setMessage('Nice!');
+      setTimeout(() => {
+        history.push('/profile');
+      }, 1500);
+    } catch {
+      setMessage('Oh no! Something went wrong!');
+    }
   };
-
   const handleUpload = async (event) => {
     event.preventDefault();
     try {
@@ -40,7 +50,7 @@ export default function Edit({ currentUser }) {
       const file = event.target.files[0];
       const fileExt = file.name.split('.').pop();
       const fileName = `${new Date().toISOString()}.${fileExt}`;
-      const filePath = `${currentUserId}/${newBee.bee_id}}/${fileName}`;
+      const filePath = `${currentUserId}/${beeId}/${fileName}`;
 
       setPhoto(
         `https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/${filePath}`
@@ -68,10 +78,11 @@ export default function Edit({ currentUser }) {
           setObservation,
           location,
           setLocation,
+          message,
+          setMessage,
           handleSubmit,
           handleUpload,
           newBee,
-          message,
         }}
       />
     </div>

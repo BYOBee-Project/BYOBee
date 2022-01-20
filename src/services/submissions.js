@@ -22,19 +22,10 @@ export async function deleteSubmission(id) {
   return checkError(response);
 }
 
-export async function editSubmission(
-  id,
-  name,
-  date,
-  image1,
-  observations,
-  location,
-  user_id,
-  bee_id
-) {
+export async function editSubmission(id, date, image1, observations, location) {
   const response = await client
     .from('submissions')
-    .update({ id, name, date, image1, observations, location, user_id, bee_id })
+    .update({ id, date, image1, observations, location })
     .eq('id', id);
   return checkError(response);
 }

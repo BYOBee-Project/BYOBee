@@ -9,6 +9,13 @@ body {
   width: 90vw;
 }
 
+.home-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh;
+}
+
 .home-title {
   font-family: 'Londrina Solid', cursive;
   padding: 0;
@@ -19,6 +26,7 @@ body {
 .home-info {
   width: 70%;
   text-align: justify;
+  margin: 2vh;
 }
 
 .bee-list {
@@ -27,7 +35,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2vw;
-  margin-top: 4vh;
+  margin: 4vh 0 8vh 0;
   border-radius: 10px;
   font-family: 'Londrina Solid', cursive;
   font-size: 2vw;

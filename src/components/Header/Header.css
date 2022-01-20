@@ -5,11 +5,16 @@ header {
   align-items: center;
   padding: 1vh 10vw 1vh 10vw;
   background-color: var(--cg-blue);
+  background-color: rgba(0, 128, 167, 0.801);
   color: var(--light-yellow);
 }
 
+a:link {
+  font-weight: bold;
+}
+
 a:visited {
-  color: white;
+  color: black;
 }
 
 .logo {

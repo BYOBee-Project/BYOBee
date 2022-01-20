@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/black-logo.png';
 
 export default function Header({ currentUser }) {
   return (

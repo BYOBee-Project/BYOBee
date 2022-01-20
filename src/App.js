@@ -9,7 +9,7 @@ import Auth from './views/Auth/Auth';
 import Profile from './views/Profile/Profile';
 import { useState } from 'react';
 import { getUser } from './services/users';
-import BeeForm from './components/BeeForm/BeeForm';
+import Add from './views/Add/Add';
 import UserDetail from './views/UserDetail/UserDetail';
 import ProtectedRoute from './utils/ProtectedRoute';
 import Edit from './views/Edit/Edit';
@@ -36,7 +36,7 @@ function App() {
             <Auth setCurrentUser={setCurrentUser} />
           </Route>
           <Route exact path="/beeform/:id">
-            <BeeForm currentUser={currentUser} />
+            <Add currentUser={currentUser} />
           </Route>
           <Route exact path="/profile/:id" component={UserDetail} />
           <ProtectedRoute exact path="/edit/:id" currentUser={currentUser}>

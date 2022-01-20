@@ -24,9 +24,11 @@ export default function BeeDetail({ currentUser }) {
       <h1 className="bee-detail-title">{currentBee.name}</h1>
       <div className="bee-detail-links">
         {!currentUser && (
-          <Link to={`/auth`} className="bee-card-link">
-            + Add to Collection
-          </Link>
+          <button>
+            <Link to={`/auth`} className="bee-card-link">
+              + Add to Collection
+            </Link>
+          </button>
         )}
         {currentUser && (
           <button>

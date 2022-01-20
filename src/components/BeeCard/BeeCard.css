@@ -4,12 +4,15 @@
   align-items: center;
   justify-content: center;
   width: 25vw;
+  padding: 1vh;
+  background-color: rgba(240, 112, 103, 0.473);
+  border-radius: 10px;
 }
 
 .card-image {
   width: 20vw;
   border-radius: 5px;
-  border: 1px solid black;
+  filter: drop-shadow(1px 1px 2px #000007);
 }
 
 .card-image:hover {

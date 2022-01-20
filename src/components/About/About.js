@@ -1,9 +1,9 @@
 import React from 'react';
 import './About.css';
 import emma from '../../assets/emma.jpeg';
-import bumblebee from '../../assets/bumblebee.jpeg';
 import michelle from '../../assets/michelle.jpg';
 import zach from '../../assets/zachphoto.jpg';
+import adria from '../../assets/linkedin.jpeg';
 
 export default function About() {
   return (
@@ -12,9 +12,9 @@ export default function About() {
       <div className="bios">
         <div className="bio-card">
           <h3>Adria Ivanitsky</h3>
-          <img src={bumblebee} />
+          <img src={adria} />
           <p>
-            Adria is a web developer in portland, OR. she loves to playing soccer, making music, and
+            Adria is a web developer in portland, OR. she loves playing soccer, making music, and
             being annoying in the zoom chat. also bees
           </p>
         </div>

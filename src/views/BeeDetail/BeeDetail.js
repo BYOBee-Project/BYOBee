@@ -29,9 +29,11 @@ export default function BeeDetail({ currentUser }) {
           </Link>
         )}
         {currentUser && (
-          <Link to={`/beeform/${params.id}`} className="bee-card-link">
-            + Add to Collection
-          </Link>
+          <button>
+            <Link to={`/beeform/${params.id}`} className="bee-card-link">
+              + Add to Collection
+            </Link>
+          </button>
         )}
       </div>
       <div className="bee-detail-images">

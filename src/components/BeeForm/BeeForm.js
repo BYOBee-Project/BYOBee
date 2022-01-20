@@ -17,7 +17,7 @@ export default function BeeForm({
     <>
       {message && <p className="message">{message}</p>}
       <div className="BeeForm">
-        <h1>Add a {newBee.name} to your collection!</h1>
+        <h1>{newBee.name}</h1>
         <form className="bee-form-form">
           <label className="bee-form-label">Add a photo:</label>
           <input required type="file" id="single" accept="image/*" onChange={handleUpload} />

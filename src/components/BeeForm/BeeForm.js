@@ -20,9 +20,10 @@ export default function BeeForm({
         <h1>Add a {newBee.name} to your collection!</h1>
         <form className="bee-form-form">
           <label className="bee-form-label">Add a photo:</label>
-          <input type="file" id="single" accept="image/*" onChange={handleUpload} />
+          <input required type="file" id="single" accept="image/*" onChange={handleUpload} />
           <label className="bee-form-label">Add a date:</label>
           <input
+            required
             type="date"
             value={date}
             onChange={(e) => {
@@ -32,6 +33,7 @@ export default function BeeForm({
           {/* when we have location capabilities, update this */}
           <label className="bee-form-label">Where did you encounter the bee?</label>
           <input
+            required
             type="textfield"
             value={location}
             onChange={(e) => {
@@ -40,6 +42,7 @@ export default function BeeForm({
           />
           <label className="bee-form-label">Any other notes or observations?</label>
           <input
+            required
             type="textarea"
             value={observation}
             onChange={(e) => {

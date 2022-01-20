@@ -28,8 +28,11 @@ export default function Edit({ currentUser }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await editSubmission(params.id, date, photo, observation, location);
-    console.log('in handleSubmit');
+    if (photo === '') {
+      alert('Please choose an image.');
+    } else {
+      await editSubmission(params.id, date, photo, observation, location);
+    }
   };
 
   const handleUpload = async (event) => {
@@ -42,7 +45,7 @@ export default function Edit({ currentUser }) {
       const file = event.target.files[0];
       const fileExt = file.name.split('.').pop();
       const fileName = `${new Date().toISOString()}.${fileExt}`;
-      const filePath = `${currentUserId}/${newBee.bee_id}}/${fileName}`;
+      const filePath = `${currentUserId}/${newBee.bee_id}/${fileName}`;
 
       setPhoto(
         `https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/${filePath}`

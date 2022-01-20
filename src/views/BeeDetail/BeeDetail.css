@@ -1,14 +1,19 @@
 .bee-detail {
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  background-color: hsla(4, 82%, 67%, 0.827);
+  border-radius: 10px;
+  margin-top: 5vh;
+  padding: 2vh 4vw 2vh 4vw;
 }
 
 .bee-detail-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 4vh;
   text-align: center;
-  margin: 5vh 0 0 0;
   padding: 0;
 }
 
@@ -16,12 +21,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2vh 0 4vh 0;
+}
+
+.Link {
+  color: white;
 }
 
 .bee-details {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .bee-detail-label {
@@ -38,4 +47,5 @@
   width: 25vw;
   margin: 0 0 2vh 0;
   border: 1px solid black;
+  border-radius: 10px;
 }

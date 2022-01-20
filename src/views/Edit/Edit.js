@@ -22,6 +22,9 @@ export default function Edit({ currentUser }) {
     const fetchBee = async () => {
       const data = await findUserBee(params.id);
       setNewBee(data);
+      setDate(data.date);
+      setLocation(data.location);
+      setObservation(data.observations);
     };
     fetchBee();
   }, [params.id]);

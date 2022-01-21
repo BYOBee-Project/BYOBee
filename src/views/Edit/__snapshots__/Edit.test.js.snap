@@ -7,9 +7,11 @@ Object {
     <div>
       <div>
         <div
-          class="BeeForm"
+          class="bee-form"
         >
-          <h1 />
+          <h1
+            class="bee-form-title"
+          />
           <form
             class="bee-form-form"
           >
@@ -54,7 +56,9 @@ Object {
               type="textarea"
               value=""
             />
-            <button>
+            <button
+              class="bee-form-button"
+            >
               Save
             </button>
           </form>
@@ -65,9 +69,11 @@ Object {
   "container": <div>
     <div>
       <div
-        class="BeeForm"
+        class="bee-form"
       >
-        <h1 />
+        <h1
+          class="bee-form-title"
+        />
         <form
           class="bee-form-form"
         >
@@ -112,7 +118,9 @@ Object {
             type="textarea"
             value=""
           />
-          <button>
+          <button
+            class="bee-form-button"
+          >
             Save
           </button>
         </form>

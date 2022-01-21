@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  background-color: hsla(4, 82%, 67%, 0.827);
+  background-color: rgba(0, 128, 167, 0.384);
   border-radius: 10px;
   margin: 10vh 0 10vh 0;
   padding: 2vh 4vw 2vh 4vw;
@@ -12,7 +12,7 @@
 
 .user-detail-title {
   font-family: 'Londrina Solid', cursive;
-  font-size: 6vh;
+  font-size: 5vh;
   text-align: center;
   padding: 0;
   margin: 6vh;

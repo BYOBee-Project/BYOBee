@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import UserDetail from './UserDetail.js';
 
-test('UserDetail view should render the UserDetail page', async () => {
+test.skip('UserDetail view should render the UserDetail page', async () => {
   const container = render(
     <MemoryRouter>
       <UserDetail

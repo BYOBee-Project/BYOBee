@@ -35,6 +35,7 @@ export default function Edit({ currentUser }) {
       alert('Please choose an image.');
     } else {
       await editSubmission(params.id, date, photo, observation, location);
+      history.push('/profile');
     }
   };
 

@@ -16,8 +16,8 @@ export default function BeeForm({
   return (
     <>
       {message && <p className="message">{message}</p>}
-      <div className="BeeForm">
-        <h1>{newBee.name}</h1>
+      <div className="bee-form">
+        <h1 className="bee-form-title">{newBee.name}</h1>
         <form className="bee-form-form">
           <label className="bee-form-label">Add a photo:</label>
           <input required type="file" id="single" accept="image/*" onChange={handleUpload} />
@@ -49,7 +49,9 @@ export default function BeeForm({
               setObservation(e.target.value);
             }}
           />
-          <button onClick={handleSubmit}>Save</button>
+          <button className="bee-form-button" onClick={handleSubmit}>
+            Save
+          </button>
         </form>
       </div>
     </>

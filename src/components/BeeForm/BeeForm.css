@@ -1,11 +1,37 @@
-.bee-form-form {
+.bee-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-top: 10vh;
+}
+
+.bee-form-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 5vh;
+}
+
+.bee-form-form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: hsla(4, 82%, 67%, 0.827);
+  border-radius: 10px;
+  padding: 2vh 4vw 2vh 4vw;
+  gap: 0.5vh;
 }
 
 .bee-form-label {
   margin: 5px;
   font-weight: bolder;
+  text-align: center;
+  margin-top: 1vh;
+  font-family: 'Londrina Solid', cursive;
+}
+
+.bee-form-button {
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  margin-top: 2vh;
 }

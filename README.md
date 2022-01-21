@@ -1,25 +1,52 @@
-# Alchemy React Base Template
+# BYOBee:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An app connecting the bee community! Bee populations are in decline due climate change, habitat loss, rampant pesticide usage, human management practices, and the spread of pests and disease. Entomologists and conservationists are working really hard to collect population data that informs pollinator conservation policies, and citizen science efforts can be super helpful to that cause. We wanted to create an app that would help non-bee experts identify the bees they see and report those encounters that could be passed along to scientists - and also because it’s fun. Our app has a public-facing education component that displays bee photos and information, and user-based profiles that allow you to build a virtual bee collection by uploading photos and details about bees you see.
 
-Use this template for all your "from scratch" deliverables. To start, simply run
+## Team Members:
 
-- `npm install`
-- `npm start`
+[Adria Ivanitsky](https://www.linkedin.com/in/adriaivanitsky/)
+[Emma Egstad](https://www.linkedin.com/in/emmaegstad/)
+[Michelle Nygren](https://www.linkedin.com/in/michellenygren/)
+[Zach Caldwell](https://www.linkedin.com/in/zachary-caldwell/)
 
-## Available Scripts
+## Team Planning:
 
-In the project directory, you can run:
+[Link to Miro Board](https://miro.com/app/board/uXjVOV_IqVg=/)
 
-### `npm start`
+## Database
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### BEES (table and columns)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- BEE_ID
+- Common Name
+- Species
+- Family
+- Region
+- Description
+- Preferred Forage
+- Habitat
+- Active Season
+- Fun Fact
+- Photo
 
-### `npm test`
+### SUBMISSIONS (table & columns)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Ref to USER_ID
+- Ref to BEE_ID
+- ID
+- Photo
+- Location
+- Date encountered
+- Observations
+
+### USERS (table & columns)
+
+- USER_ID
+- User name
+- User email
+
+### Table Relations:
+
+- Submissions stores the user_id and the bee_id.
+- Foreign key relationship between between USERS & SUBMISSIONS.
+- Foreign key relationship between BEES & SUBMISSIONS.

@@ -1,6 +1,5 @@
 import './Home.css';
 import { useEffect, useState } from 'react';
-
 import { fetchBees } from '../../services/bees';
 import BeeCard from '../../components/BeeCard/BeeCard';
 

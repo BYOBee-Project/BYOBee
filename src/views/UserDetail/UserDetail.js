@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 export default function UserDetail(props) {
   const id = props.match.params.id;
-
   const [userBee, setUserBee] = useState({});
   const [loading, setLoading] = useState(true);
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import './Profile.css';
 import { logout } from '../../services/users';
-import { getUserBees } from '../../services/submissions';
+import { getUserBees, deleteSubmission } from '../../services/submissions';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import UserCard from '../../components/UserCard/UserCard';
-import { deleteSubmission } from '../../services/submissions';
 
 export default function Profile({ setCurrentUser, currentUser }) {
   const id = currentUser.user.id;
@@ -35,7 +34,6 @@ export default function Profile({ setCurrentUser, currentUser }) {
   };
 
   if (loading) return <h1 className="loader">Loading...</h1>;
-
   return (
     <div className="profile">
       <h1 className="profile-title">Bee Collection</h1>

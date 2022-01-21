@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render a header 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <header>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/about"
+      >
+        About
+      </a>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <img
+          class="logo"
+          src="black-logo.png"
+        />
+      </a>
+      <a
+        href="/resources"
+      >
+        Resources
+      </a>
+      <a
+        href="/auth"
+      >
+        Sign-In
+      </a>
+    </header>
+  </div>
+</div>
+`;

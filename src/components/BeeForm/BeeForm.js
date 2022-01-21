@@ -30,7 +30,6 @@ export default function BeeForm({
               setDate(e.target.value);
             }}
           />
-          {/* when we have location capabilities, update this */}
           <label className="bee-form-label">Where did you encounter the bee?</label>
           <input
             required

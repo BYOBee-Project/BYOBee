@@ -1,4 +1,3 @@
-import React from 'react';
 import BeeForm from '../../components/BeeForm/BeeForm';
 import { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
@@ -17,7 +16,6 @@ export default function Add({ currentUser }) {
   const currentUserId = currentUser.user.id;
   const beeId = newBee.id;
   const beeName = newBee.name;
-
   const history = useHistory();
 
   useEffect(() => {
@@ -32,7 +30,7 @@ export default function Add({ currentUser }) {
     try {
       e.preventDefault();
       await addSubmission(beeName, date, photo, observation, location, currentUserId, beeId);
-      setMessage('Nice!');
+      setMessage('Nice! Your bee has been added.');
       setTimeout(() => {
         history.push('/profile');
       }, 1500);
@@ -40,24 +38,21 @@ export default function Add({ currentUser }) {
       setMessage('Oh no! Something went wrong!');
     }
   };
+
   const handleUpload = async (event) => {
     event.preventDefault();
     try {
       if (!event.target.files || event.target.files.length === 0) {
         throw new Error('You must select an image to upload.');
       }
-
       const file = event.target.files[0];
       const fileExt = file.name.split('.').pop();
       const fileName = `${new Date().toISOString()}.${fileExt}`;
       const filePath = `${currentUserId}/${beeId}/${fileName}`;
-
       setPhoto(
         `https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/${filePath}`
       );
-
       let { error: uploadError } = await client.storage.from('images').upload(filePath, file);
-
       if (uploadError) {
         throw uploadError;
       }

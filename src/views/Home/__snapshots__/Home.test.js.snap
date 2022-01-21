@@ -48,7 +48,7 @@ Object {
             <h3
               class="bee-card-title"
             >
-              Black-notched Bumblebee
+              Black-Notched Bumblebee
             </h3>
             <a
               href="/bees/3"
@@ -99,7 +99,7 @@ Object {
             <h3
               class="bee-card-title"
             >
-              Honey Bee (drone)
+              Honey Bee (Drone)
             </h3>
             <a
               href="/bees/12"
@@ -116,7 +116,7 @@ Object {
             <h3
               class="bee-card-title"
             >
-              Honey Bee (queen)
+              Honey Bee (Queen)
             </h3>
             <a
               href="/bees/10"
@@ -133,7 +133,7 @@ Object {
             <h3
               class="bee-card-title"
             >
-              Honey Bee (worker)
+              Honey Bee (Worker)
             </h3>
             <a
               href="/bees/9"
@@ -150,7 +150,7 @@ Object {
             <h3
               class="bee-card-title"
             >
-              Long-horned Bee
+              Long-Horned Bee
             </h3>
             <a
               href="/bees/11"
@@ -277,7 +277,7 @@ Object {
           <h3
             class="bee-card-title"
           >
-            Black-notched Bumblebee
+            Black-Notched Bumblebee
           </h3>
           <a
             href="/bees/3"
@@ -328,7 +328,7 @@ Object {
           <h3
             class="bee-card-title"
           >
-            Honey Bee (drone)
+            Honey Bee (Drone)
           </h3>
           <a
             href="/bees/12"
@@ -345,7 +345,7 @@ Object {
           <h3
             class="bee-card-title"
           >
-            Honey Bee (queen)
+            Honey Bee (Queen)
           </h3>
           <a
             href="/bees/10"
@@ -362,7 +362,7 @@ Object {
           <h3
             class="bee-card-title"
           >
-            Honey Bee (worker)
+            Honey Bee (Worker)
           </h3>
           <a
             href="/bees/9"
@@ -379,7 +379,7 @@ Object {
           <h3
             class="bee-card-title"
           >
-            Long-horned Bee
+            Long-Horned Bee
           </h3>
           <a
             href="/bees/11"

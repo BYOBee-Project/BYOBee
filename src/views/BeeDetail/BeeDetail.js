@@ -1,4 +1,3 @@
-import React from 'react';
 import './BeeDetail.css';
 import { findBeeById } from '../../services/bees';
 import { useState, useEffect } from 'react';

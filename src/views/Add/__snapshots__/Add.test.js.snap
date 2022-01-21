@@ -7,9 +7,11 @@ Object {
     <div>
       <div>
         <div
-          class="BeeForm"
+          class="bee-form"
         >
-          <h1>
+          <h1
+            class="bee-form-title"
+          >
             Alfalfa Leafcutter Bee
           </h1>
           <form
@@ -56,7 +58,9 @@ Object {
               type="textarea"
               value=""
             />
-            <button>
+            <button
+              class="bee-form-button"
+            >
               Save
             </button>
           </form>
@@ -67,9 +71,11 @@ Object {
   "container": <div>
     <div>
       <div
-        class="BeeForm"
+        class="bee-form"
       >
-        <h1>
+        <h1
+          class="bee-form-title"
+        >
           Alfalfa Leafcutter Bee
         </h1>
         <form
@@ -116,7 +122,9 @@ Object {
             type="textarea"
             value=""
           />
-          <button>
+          <button
+            class="bee-form-button"
+          >
             Save
           </button>
         </form>

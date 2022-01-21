@@ -23,13 +23,15 @@ Object {
         >
           <button>
             <a
-              href="/profile/undefined"
+              class="button-link"
+              href="/profile/undefined\\""
             >
               View
             </a>
           </button>
           <button>
             <a
+              class="button-link"
               href="/edit/undefined"
             >
               Edit
@@ -63,13 +65,15 @@ Object {
       >
         <button>
           <a
-            href="/profile/undefined"
+            class="button-link"
+            href="/profile/undefined\\""
           >
             View
           </a>
         </button>
         <button>
           <a
+            class="button-link"
             href="/edit/undefined"
           >
             Edit

@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import Profile from './Profile.js';
 
-test('Profile view should render the Profile component', async () => {
+test('Profile view should render the Profile component.', async () => {
   const container = render(
     <MemoryRouter>
       <Route>

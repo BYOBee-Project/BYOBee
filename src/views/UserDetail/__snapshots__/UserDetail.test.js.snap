@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDetail view should render the UserDetail page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="user-detail"
+      >
+        <h1
+          class="user-detail-title"
+        >
+          Black-notched Bumblebee
+        </h1>
+        <img
+          alt="Black-notched Bumblebee"
+          class="user-detail-image"
+          src="https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/d1beb9ec-d137-4e7f-ac5c-4c9197075a15/3/2022-01-20T20:39:38.457Z.jpg"
+        />
+        <div
+          class="user-details"
+        >
+          <p
+            class="user-detail-date"
+          >
+            <span
+              class="user-detail-label"
+            >
+              Date Spotted: 
+            </span>
+            2022-01-13
+          </p>
+          <p
+            class="user-detail-location"
+          >
+            <span
+              class="user-detail-label"
+            >
+              Location Spotted: 
+            </span>
+            Zach
+          </p>
+          <p
+            class="user-detail-observation"
+          >
+            <span
+              class="user-detail-label"
+            >
+              Observations: 
+            </span>
+            Zach
+          </p>
+        </div>
+        <button
+          class="user-detail-button"
+        >
+          <a
+            class="user-detail-link"
+            href="/profile"
+          >
+            Back to Profile
+          </a>
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="user-detail"
+    >
+      <h1
+        class="user-detail-title"
+      >
+        Black-notched Bumblebee
+      </h1>
+      <img
+        alt="Black-notched Bumblebee"
+        class="user-detail-image"
+        src="https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/d1beb9ec-d137-4e7f-ac5c-4c9197075a15/3/2022-01-20T20:39:38.457Z.jpg"
+      />
+      <div
+        class="user-details"
+      >
+        <p
+          class="user-detail-date"
+        >
+          <span
+            class="user-detail-label"
+          >
+            Date Spotted: 
+          </span>
+          2022-01-13
+        </p>
+        <p
+          class="user-detail-location"
+        >
+          <span
+            class="user-detail-label"
+          >
+            Location Spotted: 
+          </span>
+          Zach
+        </p>
+        <p
+          class="user-detail-observation"
+        >
+          <span
+            class="user-detail-label"
+          >
+            Observations: 
+          </span>
+          Zach
+        </p>
+      </div>
+      <button
+        class="user-detail-button"
+      >
+        <a
+          class="user-detail-link"
+          href="/profile"
+        >
+          Back to Profile
+        </a>
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

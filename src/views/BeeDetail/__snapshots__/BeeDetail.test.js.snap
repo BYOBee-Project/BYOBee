@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeeDetail displays Bee detail information 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="bee-detail"
+      >
+        <h1
+          class="bee-detail-title"
+        >
+          Alfalfa Leafcutter Bee
+        </h1>
+        <div
+          class="bee-detail-images"
+        >
+          <img
+            alt="Alfalfa Leafcutter Bee"
+            class="bee-detail-image"
+            src="https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/bees/megachile-rotundata/megachile-rotundata-1.jpg"
+          />
+          <img
+            alt="Alfalfa Leafcutter Bee"
+            class="bee-detail-image"
+            src="https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/bees/megachile-rotundata/megachile-rotundata-2.jpg"
+          />
+        </div>
+        <div
+          class="bee-detail-links"
+        >
+          <button>
+            <a
+              class="bee-card-link"
+              href="/beeform/6"
+            >
+              + Add to Collection
+            </a>
+          </button>
+        </div>
+        <div
+          class="bee-details"
+        >
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Species: 
+            </span>
+            Megachile rotundata
+          </p>
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Family: 
+            </span>
+            Megachilidae
+          </p>
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Region: 
+            </span>
+            Introduced European species that is now common across North America
+          </p>
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Description: 
+            </span>
+            Female alfalfa leafcutter bees are mostly black, and are fairly smooth when viewed from above. The have slightly pointed abdomens and carry pollen on special velcro-like hairs under their abdomen (called scopa). The males are lighter in color and slightly fuzzier with more prominent striping on their rounded abdomens. They also have strikingly green-tinted eyes!
+          </p>
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Preferred Forage: 
+            </span>
+            Clovers, legumes, rapeseed, and… alfalfa, of course!
+          </p>
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Nesting Habits: 
+            </span>
+            M. rotundata are solitary, tunnel-nesting bees that will reuse holes drilled by other insects or animals, as well as hollow reeds and flower stems to make their nest cavities.  Humans can provide nesting sites via cardboard tubes, natural reeds, or wooden nesting trays (similar to mason bees). These little bees prefer holes with a 6mm diameter! 
+          </p>
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Active Season: 
+            </span>
+            June through September in northern states, with longer active seasons in the south.
+          </p>
+          <p
+            class="bee-detail-info"
+          >
+            <span
+              class="bee-detail-label"
+            >
+              Fun Fact: 
+            </span>
+            These bees were purposefully introduced by the federal government in the 1940s to increase pollination efforts of alfalfa and yield higher seed production. You can thank these bees for all the protein-rich alfalfa that we feed to dairy cattle for yummy foods like cheese and ice cream!
+          </p>
+        </div>
+        <button>
+          <a
+            class="bee-detail-link"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="bee-detail"
+    >
+      <h1
+        class="bee-detail-title"
+      >
+        Alfalfa Leafcutter Bee
+      </h1>
+      <div
+        class="bee-detail-images"
+      >
+        <img
+          alt="Alfalfa Leafcutter Bee"
+          class="bee-detail-image"
+          src="https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/bees/megachile-rotundata/megachile-rotundata-1.jpg"
+        />
+        <img
+          alt="Alfalfa Leafcutter Bee"
+          class="bee-detail-image"
+          src="https://purcoqerkuxhmrkzgmyk.supabase.in/storage/v1/object/public/images/bees/megachile-rotundata/megachile-rotundata-2.jpg"
+        />
+      </div>
+      <div
+        class="bee-detail-links"
+      >
+        <button>
+          <a
+            class="bee-card-link"
+            href="/beeform/6"
+          >
+            + Add to Collection
+          </a>
+        </button>
+      </div>
+      <div
+        class="bee-details"
+      >
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Species: 
+          </span>
+          Megachile rotundata
+        </p>
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Family: 
+          </span>
+          Megachilidae
+        </p>
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Region: 
+          </span>
+          Introduced European species that is now common across North America
+        </p>
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Description: 
+          </span>
+          Female alfalfa leafcutter bees are mostly black, and are fairly smooth when viewed from above. The have slightly pointed abdomens and carry pollen on special velcro-like hairs under their abdomen (called scopa). The males are lighter in color and slightly fuzzier with more prominent striping on their rounded abdomens. They also have strikingly green-tinted eyes!
+        </p>
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Preferred Forage: 
+          </span>
+          Clovers, legumes, rapeseed, and… alfalfa, of course!
+        </p>
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Nesting Habits: 
+          </span>
+          M. rotundata are solitary, tunnel-nesting bees that will reuse holes drilled by other insects or animals, as well as hollow reeds and flower stems to make their nest cavities.  Humans can provide nesting sites via cardboard tubes, natural reeds, or wooden nesting trays (similar to mason bees). These little bees prefer holes with a 6mm diameter! 
+        </p>
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Active Season: 
+          </span>
+          June through September in northern states, with longer active seasons in the south.
+        </p>
+        <p
+          class="bee-detail-info"
+        >
+          <span
+            class="bee-detail-label"
+          >
+            Fun Fact: 
+          </span>
+          These bees were purposefully introduced by the federal government in the 1940s to increase pollination efforts of alfalfa and yield higher seed production. You can thank these bees for all the protein-rich alfalfa that we feed to dairy cattle for yummy foods like cheese and ice cream!
+        </p>
+      </div>
+      <button>
+        <a
+          class="bee-detail-link"
+          href="/"
+        >
+          Back to Home
+        </a>
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -32,13 +32,9 @@ export default function Edit({ currentUser }) {
     if (photo === '') {
       alert('Please choose an image.');
     } else {
-      try {
-        await editSubmission(params.id, date, photo, observation, location);
-        setMessage('Nice! Your bee has been updated.');
-        history.push('/profile');
-      } catch {
-        setMessage('Oops! There was a problem with your edit. Please try again.');
-      }
+      await editSubmission(params.id, date, photo, observation, location);
+      setMessage('Nice! Your bee has been updated.');
+      history.push('/profile');
     }
   };
 

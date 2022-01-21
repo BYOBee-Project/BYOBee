@@ -15,7 +15,6 @@ export default function BeeForm({
 }) {
   return (
     <>
-      {message && <p className="message">{message}</p>}
       <div className="bee-form">
         <h1 className="bee-form-title">{newBee.name}</h1>
         <form className="bee-form-form">
@@ -48,6 +47,7 @@ export default function BeeForm({
               setObservation(e.target.value);
             }}
           />
+          {message && <p className="message">{message}</p>}
           <button className="bee-form-button" onClick={handleSubmit}>
             Save
           </button>

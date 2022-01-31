@@ -16,9 +16,11 @@
 
 ## Grade
 
-150 possible
-Routes utilize RESTful conventions -1
-Works as intended with no bugs -1
-Variables / functions are well named -1
-Snapshot tests for all components -2
-**Total Points - 145**
+| Rubric                               | Deduction |
+| ------------------------------------ | --------- |
+| Routes utilize RESTful conventions   | -1        |
+| Works as intended with no bugs       | -1        |
+| Variables / functions are well named | -1        |
+| Snapshot tests for all components    | -2        |
+
+**Total Points: 145 / 150**

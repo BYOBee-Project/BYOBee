@@ -11,7 +11,7 @@ export default function UserCard({ userBee, handleDelete }) {
       </Link>
       <div className="user-card-buttons">
         <button>
-          <Link to={`/profile/${userBee.id}"`} className="button-link">
+          <Link to={`/profile/${userBee.id}`} className="button-link">
             View
           </Link>
         </button>

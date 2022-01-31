@@ -35,7 +35,7 @@ function App() {
           <Route exact path="/auth">
             <Auth setCurrentUser={setCurrentUser} />
           </Route>
-          <Route exact path="/beeform/:id">
+          <Route exact path="/submissions/new">
             <Add currentUser={currentUser} />
           </Route>
           <Route exact path="/profile/:id" component={UserDetail} />

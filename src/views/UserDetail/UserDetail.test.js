@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import UserDetail from './UserDetail.js';
 
-test.skip('UserDetail view should render the UserDetail page', async () => {
+test('UserDetail view should render the UserDetail page', async () => {
   const container = render(
     <MemoryRouter>
       <UserDetail
@@ -11,6 +11,6 @@ test.skip('UserDetail view should render the UserDetail page', async () => {
       />
     </MemoryRouter>
   );
-  await screen.findByText('Date Spotted:');
+  await screen.findByText('Portland, ME');
   expect(container).toMatchSnapshot();
 });

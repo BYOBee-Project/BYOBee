@@ -39,7 +39,7 @@ Object {
             >
               Location Spotted: 
             </span>
-            Zach
+            Portland, ME
           </p>
           <p
             class="user-detail-observation"
@@ -100,7 +100,7 @@ Object {
           >
             Location Spotted: 
           </span>
-          Zach
+          Portland, ME
         </p>
         <p
           class="user-detail-observation"

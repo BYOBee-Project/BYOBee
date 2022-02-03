@@ -272,6 +272,11 @@ Object {
               </a>
             </div>
           </div>
+          <p
+            class="credit"
+          >
+            All photos attributed to Emily Parker.
+          </p>
         </div>
       </div>
     </div>
@@ -543,6 +548,11 @@ Object {
             </a>
           </div>
         </div>
+        <p
+          class="credit"
+        >
+          All photos attributed to Emily Parker.
+        </p>
       </div>
     </div>
   </div>,

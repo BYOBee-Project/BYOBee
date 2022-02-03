@@ -72,6 +72,11 @@ Object {
             Back to Home
           </a>
         </button>
+        <p
+          class="credit"
+        >
+          All photos attributed to Emily Parker.
+        </p>
       </div>
     </div>
   </body>,
@@ -143,6 +148,11 @@ Object {
           Back to Home
         </a>
       </button>
+      <p
+        class="credit"
+      >
+        All photos attributed to Emily Parker.
+      </p>
     </div>
   </div>,
   "debug": [Function],

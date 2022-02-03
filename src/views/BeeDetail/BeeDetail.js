@@ -80,6 +80,7 @@ export default function BeeDetail({ currentUser }) {
           Back to Home
         </Link>
       </button>
+      <p className="credit">All photos attributed to Emily Parker.</p>
     </div>
   );
 }

@@ -51,6 +51,7 @@ export default function Resources() {
       <button>
         <Link to={'/'}>Back to Home</Link>
       </button>
+      <p className="credit">All photos attributed to Emily Parker.</p>
     </div>
   );
 }

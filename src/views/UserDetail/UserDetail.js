@@ -42,6 +42,7 @@ export default function UserDetail(props) {
           Back to Profile
         </Link>
       </button>
+      <p className="credit">All photos attributed to Emily Parker.</p>
     </div>
   );
 }

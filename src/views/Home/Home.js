@@ -33,6 +33,7 @@ export default function Home() {
           <BeeCard key={bee.id} bee={bee} />
         ))}
       </div>
+      <p className="credit">All photos attributed to Emily Parker.</p>
     </div>
   );
 }

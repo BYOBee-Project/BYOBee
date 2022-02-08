@@ -35,7 +35,7 @@ export default function BeeDetail({ currentUser }) {
         )}
         {currentUser && (
           <button>
-            <Link to={`/beeform/${params.id}`} className="bee-card-link">
+            <Link to="/submissions/new" query={{ id: params.id }} className="bee-card-link">
               + Add to Collection
             </Link>
           </button>

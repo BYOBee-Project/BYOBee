@@ -11,7 +11,9 @@ Object {
         >
           <h1
             class="bee-form-title"
-          />
+          >
+            Black-notched Bumblebee
+          </h1>
           <form
             class="bee-form-form"
           >
@@ -34,7 +36,7 @@ Object {
             <input
               required=""
               type="date"
-              value=""
+              value="2022-01-13"
             />
             <label
               class="bee-form-label"
@@ -44,7 +46,7 @@ Object {
             <input
               required=""
               type="textfield"
-              value=""
+              value="Portland, ME"
             />
             <label
               class="bee-form-label"
@@ -54,7 +56,7 @@ Object {
             <input
               required=""
               type="textarea"
-              value=""
+              value="Zach"
             />
             <button
               class="bee-form-button"
@@ -73,7 +75,9 @@ Object {
       >
         <h1
           class="bee-form-title"
-        />
+        >
+          Black-notched Bumblebee
+        </h1>
         <form
           class="bee-form-form"
         >
@@ -96,7 +100,7 @@ Object {
           <input
             required=""
             type="date"
-            value=""
+            value="2022-01-13"
           />
           <label
             class="bee-form-label"
@@ -106,7 +110,7 @@ Object {
           <input
             required=""
             type="textfield"
-            value=""
+            value="Portland, ME"
           />
           <label
             class="bee-form-label"
@@ -116,7 +120,7 @@ Object {
           <input
             required=""
             type="textarea"
-            value=""
+            value="Zach"
           />
           <button
             class="bee-form-button"
